@@ -1,5 +1,0 @@
-<style type="text/css">
- .frame { height: 600px; width: 600px; overflow: hidden; } 
- .zoomin img { height: 700px; width: 500px; -webkit-transition: all 5s ease; -moz-transition: all 5s ease; -ms-transition: all 2s ease; transition: all 2s ease; } 
- .zoomin img:hover { width: 600px; height: 600px; } 
- </style> 
