@@ -16,13 +16,16 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
+     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,6 +36,522 @@
     <![endif]-->
 
 </head>
+
+
+   <style>
+   	body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: Arial;
+   
+   }
+
+           /*counting for large screens*/
+            .counting-content{
+                position: absolute;
+                bottom: 5%;
+                left:5%;
+                z-index: 1;
+                visibility: visible;
+                text-decoration: none;
+            }
+            .inner-width{
+                max-width: 1000px;
+                display: flex;
+                padding;
+            }
+            .counting-col{
+                flex: 1;
+                text-align: center;
+                padding:30px;
+                color:black;
+
+            }
+            .iconbox i{
+                font-size :30px;
+                background-color: ;
+                border-radius: %;
+                color:black;
+                height: px;
+                width: px;
+                padding-bottom:10px;
+                text-shadow:  2px 2px  rgba(0,0,0,0.2);
+
+               
+
+            }
+            .num{
+                font-size: 40px;
+                 margin:px 0;
+                 color:black;
+                 border:px solid white;
+                 background-color: ; 
+                 border-radius: %;
+                 height: 60px;
+                 width: 60px;
+
+                 
+
+            }
+            .iconbox
+            {
+                height:;
+                border: #25D366;
+                border-radius: 50%;
+            }
+            .count-text{
+                color: ;
+            }
+            .for-border{
+                border:px solid black;
+                background-color: rgba(225,225,255,0.8);
+                border-radius: px;
+                width: 100px;
+                height: 100px;
+                box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.7);
+
+            }
+
+            @media screen and (max-width: 1000px) {
+                .counting-col{
+                    display: none;
+                }
+                .upcoming-events{
+                    padding:px;
+                    margin:px;
+                
+                }
+                
+            }
+
+            /*counting for small screens*/
+            @media (min-width: 375px){
+                .upcoming-text{
+                    display:none;
+                }
+                .card-up{
+                cursor: pointer;
+                width:100px;
+        
+               }
+               .counting-content2{
+                display: none;
+               }
+            }
+
+            .counting-content2{
+                position: ;
+                bottom: ;
+                left:;
+                z-index: ;
+                text-decoration: none;
+                padding-top: 15%;
+                padding-left:5%;
+            }
+            .inner-width2{
+                max-width: 100px;
+                display: flex;
+                padding;
+            }
+            .counting-col2{
+                flex: 1;
+                text-align: center;
+                padding:7px;
+                color:black;
+                 text-decoration: none;
+
+
+
+            }
+            
+            .iconbox2 i{
+                font-size :23px;
+                background-color: ;
+                border-radius: %;
+                color:#333333;
+                height: px;
+                width: px;
+                padding-bottom:5px;
+                text-shadow:  2px 2px  rgba(0,0,0,0.2);
+               
+
+            }
+            .num2{
+                font-size: 20px;
+                 margin:px 0;
+                 color:white;
+                 border:px solid white;
+                 background-color: ; 
+                 border-radius: %;
+                 height: 0px;
+                 width: 0px;
+
+                 
+
+            }
+            .iconbox2
+            {
+                height:;
+                border: #25D366;
+                border-radius: 50%;
+            }
+            .count-text2{
+                color: white;
+                text-decoration: none;
+            }
+            .for-border2{
+                border:px solid black;
+                background-color: #333333;
+                width: 76px;
+                height: 76px;
+                box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.2);
+
+
+            }
+            .counting-content2 a:hover, .counting-content2 span:hover,.counting-content2 i:hover{
+                text-decoration: none;
+                color:#25d375;
+            }
+            
+
+            /*headig slides*/
+            .heading-animation{
+                width:225px;
+                height: 5px;
+                background-color: ;
+                margin:auto;
+
+            }
+            .heading2-element{
+                width:60px;
+                height: 5px;
+                background-color: #00e604;
+                float: right;
+                position:relative;
+                animation-name:elementtwo;
+                animation-duration: 3s;
+                animation-iteration-count:2;
+                animation-timing-function: ;
+                animation-direction: alternate;
+            }
+                .heading1-element{
+                width:60px;
+                height: 5px;
+                background-color: #00e604;
+                position:relative;
+                animation-name:elementone;
+                animation-duration: 3s;
+                animation-iteration-count:2;
+                animation-timing-function: ;
+                animation-direction: alternate;
+
+            }
+
+            @keyframes elementone {
+                from {left:0px;opacity: 0;}
+                to {left: 165px;opacity: 1;}
+            }
+           @keyframes elementtwo {
+                 from {right:0px;opacity: 0;}
+                to {right: 165px;opacity: 1;}
+            }
+
+
+            
+            /*flippping of team leaders*/
+             @media screen and (max-width: 1000px) {
+            .team-bigsize{
+                display: none;
+            }
+            }
+            @media (min-width:999px){
+            .team-smallsize{
+                display: none;
+            }
+
+            }
+            .middle{
+                position: absolute ;
+                top:50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+            }
+
+            .card{
+                cursor: pointer;
+                width:153px;
+                height: 162px;
+                padding-top:60px;
+
+
+            }
+            .front img{
+                border-radius: 50%;
+                border:7px solid white;
+                
+                
+            
+            }
+            .front,.back{
+                width: 100%;
+                height: 150%;
+                overflow: hidden;
+                backface-visibility: hidden;
+                position:absolute;
+                transition: transform .5s linear; 
+            }
+            .front{
+                transform: perspective(600px) rotateY(0deg);
+            }
+            .back{
+                background: white;
+                transform: perspective(600px) rotateY(180deg);
+               
+            }
+            .back-content{
+                color: #2bc142;
+                text-align: center;
+                width:100%;
+            }
+            .sm{
+                margin: 20px;
+            }
+            .sm a{
+                display: inline-flex;
+                width:35px;
+                height: 35px;
+                justify-content:center;
+                align-items: center;
+                color:white;
+                text-decoration: none;
+                font-size: 20;
+                transition: 0.4s; 
+                border-radius: 50%;
+                background:#333333; 
+            }
+
+            .sm a:hover{
+                background: #00e604;
+                color: white;
+            }
+            .card:hover > .front{
+                transform: perspective(600px) rotateY(-180deg);
+            }
+            .card:hover > .back{
+                transform: perspective(600px) rotateY(0deg);
+            }
+
+            }
+
+
+* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: ;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 6px;
+  font-size: 10px;
+  width: 21%;
+  box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.4);
+  margin: 2px;
+
+
+}
+
+.tablink:hover {
+  background-image:linear-gradient(to left,#276174,#33c58e,#276174);
+box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);
+color:;
+background-position: right;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10px 0px;
+  border-radius: 7px 7px 7px 7px;
+  height: 100%;
+}
+
+#torch {background-color:  #eeeeee;}
+#seniors {background-color: #eeeeee;} 
+#juniors {background-color:  #eeeeee;}
+#inductees{background-color:  #eeeeee;}
+
+.team-m {
+  position: relative;
+  width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 3px 3px 3px 3px ;
+
+}
+
+.team-m-img {
+  display: block;
+  width: 100%;
+  height: auto;
+   border-radius: 3px 3px 3px 3px ;
+   border: px white solid;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: #555; /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 2px;
+  padding: 15px;
+  text-align: center;
+ clip-path: polygon(0 100%,100% 0,100% 100%); 
+
+
+}
+
+.team-m:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color:  white;
+  font-size: 15px;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-15%, -5%);
+  text-align: bottom;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+@media (min-width: 400px){
+
+  .tabcontent {
+  color: white;
+  display: none;
+  padding: 200px 50px;
+  border-radius: 4px 4px 4px 4px;
+  height: 0%;
+  }
+
+ .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 17px;
+  width: 24%;
+  box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.4);
+  margin: 2px;
+  height: 
+ }
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: #555; /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 2px;
+  padding: 15px;
+  text-align: center;
+ clip-path: polygon(0 100%,100% 0,100% 100%); 
+
+
+}
+.team-m {
+  position: relative;
+  width:60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 3px 3px 3px 3px ;
+
+}
+}
+
+.team-member {
+    
+  box-shadow: 0 px px 0 rgba(0,0,0,0.0);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 50px;
+
+}
+
+.team-member:hover {
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0,0.2);
+  color: #2bc142;
+  
+}
+.team-member a li{
+    display:;
+}
+
+
+}
+
+</style>
+            
+        
+        </style>
+
+
+<!--counting for large screens-->
+        <div class="counting-content">
+            <div class="counting-sec">
+              <div class="inner-width">
+                <div class="counting-col">
+                     <div class="iconbox"><i class="fa fa-flag"></i></div>
+                     <div class="for-border">
+                     <span class="num">10</span>
+                    <span style="font-size: 30px;color: #25d375">+
+                     </span>
+                     <div class="count-text"><h5>events</h5></div>
+                     </div>
+                </div>
+                <div class="counting-col">
+                     <div class="iconbox"><i class="fa fa-lightbulb-o"></i></div>
+                     <div class="for-border">
+                     <span class="num">7</span>
+                     <span style="font-size: 30px;color: #25d375">+
+                     </span>
+                     <h5 style="padding-top:0px; ">projects</h5>
+                     </div>
+                </div>
+                <div class="counting-col">
+                     <div class="iconbox"><i class="fa fa-user"></i></div>
+                     <div class="for-border">
+                    <span class="num">60</span>
+                     <span style="font-size: 30px;color: #25d375">+
+                     </span>
+                     <h5>team</h5>
+                     </div>
+                </div>
+             </div>
+          </div>
+       </div>
+         
+         <script type="text/javascript">
+            $(".num").counterUp({delay:10,time:1000});
+        </script>
+
 
 <body id="page-top" class="index">
 
@@ -120,17 +639,59 @@
         </div>
     </header>
 	<!----begin------Insert to your webpage where you want to display the slider-->
-<div id="hislider1" style=" max-width:960px;max-height:360px;height:100%; margin: 0 auto;"><noscript>The slider is powered by <strong>Hi Slider</strong>, a easy jQuery image slider from <a target="_blank" href="hislider.com">hislider.com</a>. Please enable JavaScript to view.</noscript><div class="hi-about-text" style="display:none">This jQuery slider was created with the free <a style="color:#FFF;" href="http://hislider.com" target="_blank">Hi Slider</a> for WordPress plugin,Joomla & Drupal Module from hislider.com.<br /><br /><a style="color:#FFF;" href="#" class="hi-about-ok">OK</a></div><div class="hi-slider-watermark"  style="display:none"><a href="http://hislider.com" target="_blank">hislider.com</a></div></div>
+<!--<div id="hislider1" style=" max-width:960px;max-height:360px;height:100%; margin: 0 auto;"><noscript>The slider is powered by <strong>Hi Slider</strong>, a easy jQuery image slider from <a target="_blank" href="hislider.com">hislider.com</a>. Please enable JavaScript to view.</noscript><div class="hi-about-text" style="display:none">This jQuery slider was created with the free <a style="color:#FFF;" href="http://hislider.com" target="_blank">Hi Slider</a> for WordPress plugin,Joomla & Drupal Module from hislider.com.<br /><br /><a style="color:#FFF;" href="#" class="hi-about-ok">OK</a></div><div class="hi-slider-watermark"  style="display:none"><a href="http://hislider.com" target="_blank">hislider.com</a></div></div>-->
  <!----end------Insert to your webpage where you want to display the slider-->
 
-
+<div class="counting-content2">
+            <div class="counting-sec2">
+              <div class="inner-width2">
+                <a href="#portfolio"> <div class="counting-col2">
+                     <div class="iconbox2"><i class="fa fa-flag"></i></div>
+                     <div class="for-border2">
+                     <span class="num2">10</span>
+                    <span style="font-size: 25px;color: #25d375">+
+                     </span>
+                     <div class="count-text2"><h6>events</h6></div>
+                     </div>
+                </div>
+            </a>
+               <a href="#projectmodel"> <div class="counting-col2">
+                     <div class="iconbox2"><i class="fa fa-lightbulb-o"></i></div>
+                     <div class="for-border2">
+                     <span class="num2">7</span>
+                     <span style="font-size: 25px;color: #25d375">+
+                     </span>
+                     <div class="count-text2"><h6>projects</h6></div>
+                     </div>
+                </div>
+               </a>
+               <a href="#team">
+                <div class="counting-col2">
+                     <div class="iconbox2"><i class="fa fa-user"></i></div>
+                     <div class="for-border2">
+                    <span class="num2">60</span>
+                     <span style="font-size: 25px;color: #25d375">+
+                     </span>
+                     <div class="count-text2"><h6>team</h6></div>
+                     </div>
+                </div>
+            </a>
+             </div>
+          </div>
+       </div>
+         
+         <script type="text/javascript">
+            $(".num2").counterUp({delay:10,time:1000});
+        </script>
     <!-- About Section -->
-    <section id="about">
-        <div class="container">
+    <section id="about" style="padding-top: 60px">
+        <div class="container"  >
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Us</h2>
-                    <p class="section-subheading text-muted" style = "align:left; padding-top:100px; font-size:120%">We the People of Prakriti- The Environmental Club of NIT Durgapur, strive to make a difference and inculcate the seed of awareness and action in the minds of prospective engineers to make this environment a sustainable place for every living being. Our motto is to change the notion that Engineers do not care for environment into making every individual on campus, a GreenEngineer, who minimizes the risk of pollution that might be caused with new inventions or breakthrough researches in technology. As a club, we imbibe to the values our Mother Nature has taught us: Perseverance, Sustenance and Progress. Right from its rootage, Team Prakriti has made true those envisions of the founders of our club and crossed many milestones ever since its onset. We conduct our events throughout the year, reminding and awaking the slumbered minds, the importance of environment and its preservation. </p>
+                    <div class="heading-animation" ><div  class="heading2-element" ></div></div>
+                    <h2 class="section-heading text-animation" style="background-color: white;">About Us</h2>
+                    <div class="heading-animation"><div class="heading1-element"></div></div>
+                    <p class="section-subheading text-muted" style = "align:left; padding-top:100px; font-size:120%">We the People of <h6 style="color:#2bc142;" >Prakriti- The Environmental Club of NIT Durgapur</h6>, strive to make a difference and inculcate the seed of awareness and action in the minds of prospective engineers to make this environment a sustainable place for every living being. Our motto is to change the notion that Engineers do not care for environment into making every individual on campus, a GreenEngineer, who minimizes the risk of pollution that might be caused with new inventions or breakthrough researches in technology. As a club, we imbibe to the values our Mother Nature has taught us: Perseverance, Sustenance and Progress. Right from its rootage, Team Prakriti has made true those envisions of the founders of our club and crossed many milestones ever since its onset. We conduct our events throughout the year, reminding and awaking the slumbered minds, the importance of environment and its preservation. </p>
                 </div>
             </div>
 <!--
@@ -139,6 +700,7 @@
             </div>
 -->
         </div>
+    </section>
     </section>
 
 
@@ -441,83 +1003,41 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
             </div>
 
     </section>
-	</section>
 
 
-	<!-- Clients Aside -->
-	<section id="spon">
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-			<div class="col-lg-12 text-center">
-			<h2 class="section-heading">Our proud sponsors</h2>
-			</div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img src="pic/bigbazar-min.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img src="pic/bar nat2.jfif" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img src="pic/canara3.png" class="img-responsive img-centered" alt="">
-                    </a>
-                </div> </div><div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img src="pic/arihant.jfif" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img src="pic/lemon grass-min.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#">
-                        <img src="pic/titan.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-	</section>
-
+   <div style="height: 150px"></div>
+	
 
 
 	 <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">DINITARIES</h2>
+                    <h2 class="section-heading text-animation" style=" text-shadow:  0px 4px  rgba(43,193,66,0.3);">DIGNITARIES</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row" style="">
-                <div class="col-md-2 col-sm-12 col-xs-12 col-md-offset-3">
+                <div class="col-md-2 col-sm-6 col-xs-6 col-md-offset-3">
                     <div class="team-member">
-                        <img src="pic/Director_image1-min.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Prof.Anupam basu</h4>
+                        <img src="pic/Director_image-min.jpg" class="img-responsive img-circle" alt=""  style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
+                        <h4>Prof.Anupam Basu</h4>
                         <p class="text-muted">Director</p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="team-member">
-                        <img src="pic/unknown.png"class="img-responsive img-circle" alt="">
-                        <h4>Shri sowmya sen sharma</h4>
-                        <p class="text-muted">Registrar</p>
                         <h4></h4>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-xs-6 ">
                     <div class="team-member">
-                        <img src="pic/adhikarisir-min.jpg" class="img-responsive img-circle" alt="">
-                        <h4>kalyan Adhikari sir</h4>
+                        <img src="pic/unknown.png"class="img-responsive img-circle" alt="" style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
+                        <h4>Shri Sowmya Sen Sharma</h4>
+                        <p class="text-muted">Registrar</p>
+                        <h4></4>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 ">
+                    <div class="team-member">
+                        <img src="pic/adhikarisir-min.jpg" class="img-responsive img-circle" alt="" style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
+                        <h4>Kalyan Adhikari sir</h4>
                         <p class="text-muted">Faculty adivsor</p>
                         <h4></h4>
                         
@@ -528,22 +1048,18 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
               </div>
             
         </div>
-    </section>
-
-            
-    <!-- Team Section -->
-    <section id="team" class="">
-        <div class="container">
+    
+        <div class="container team-smallsize">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Team Leaders</h2>
+                    <h2 class="section-heading text-animation" style=" text-shadow:  0px 4px  rgba(43,193,66,0.3);">Our Team Leaders</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-            <div class="row" style="">
-                <div class="col-md-2 col-sm-12 col-xs-12">
-                    <div class="team-member">
-                        <img src="pic/sud-min.jpg" class="img-responsive img-circle" alt="">
+            <div class="row" >
+                <div class="col-md-2 col-xs-6">
+                   <div class="team-member">
+                        <img src="pic/sud-min.jpg" class="img-responsive img-circle" alt=""   style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);"  >
                         <h4>Sudhanshu Saurav</h4>
                         <p class="text-muted">President</p>
                         <ul class="list-inline social-buttons">
@@ -556,9 +1072,9 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-xs-6">
                     <div class="team-member">
-                        <img src="pic/far-min.jpg" class="img-responsive img-circle" style="" alt="">
+                        <img src="pic/far-min.jpg" class="img-responsive img-circle"  alt=""  style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
                         <h4>Farid Nawaz</h4>
                         <p class="text-muted">Vice President</p>
                         <h4></h4>
@@ -572,9 +1088,9 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-xs-6">
                     <div class="team-member">
-                        <img src="pic/shir-min.jpg" class="img-responsive img-circle" alt="">
+                        <img src="pic/shir-min.jpg" class="img-responsive img-circle" alt=""  style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
                         <h4>Shrish</h4>
                         <p class="text-muted">General Secetary</p>
                         <h4></h4>
@@ -588,9 +1104,9 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         </ul>
                     </div>
                 </div>
-            <div class="col-md-2 col-sm-12">
+               <div class="col-md-2 col-xs-6">
                     <div class="team-member">
-                        <img src="pic/vik-min.jpg" class="img-responsive img-circle" alt="">
+                        <img src="pic/vik-min.jpg" class="img-responsive img-circle" alt=""  style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
                         <h4>Vikas Kumar Yadav</h4>
                         <p class="text-muted">Design head</p>
                         <ul class="list-inline social-buttons">
@@ -603,9 +1119,9 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         </ul>
                     </div>
                 </div>
-                 <div class="col-md-2">
+                <div class="col-md-2 col-xs-6">
                     <div class="team-member">
-                        <img src="pic/shan-min.jpg" class="img-responsive img-circle" alt="">
+                        <img src="pic/shan-min.jpg" class="img-responsive img-circle" alt=""  style="box-shadow: 0px 16px 32px 0 rgba(0,0,0,0.5);">
                         <h4>Shankar Ray</h4>
                         <p class="text-muted">Treasurer</p>
                         <h4></h4>
@@ -619,9 +1135,9 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         </ul>
                     </div>
                 </div>
-                 <div class="col-md-2">
+                 <div class="col-md-2 col-xs-6">
                     <div class="team-member">
-                        <img src="pic/roh-min.jpg" class="img-responsive img-circle" alt="">
+                        <img src="pic/roh-min.jpg" class="img-responsive img-circle" alt="" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
                         <h4>Rohith Goud M</h4>
                         <p class="text-muted">Tech Head</p>
                         <h4></h4>
@@ -635,322 +1151,371 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         </ul>
                     </div>
                 </div>
-              </div>
+            </div>
+            
+        </div>
+
+        <div style="height: 10px;">
+        	<div class="col-md-4 col-xs-4"></div>
+        	<div class="col-md-4 col-xs-4" style="background-color: white;height: 4px;"></div>
+        	<div class="col-md-4 col-xs-4"></div>
+        </div>
+           <div class="container team-bigsize">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted"></p>
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-muted"></h3>
+                    <h2 class="section-heading text-animation" style=" text-shadow:  0px 4px  rgba(43,193,66,0.3);">Our Team Leaders</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-        </div>
-    </section>
+               <div class="row">
+                  <div class="col-md-2 col-xs-6">
+                    <div class="card middle" style="background-color:">
+                        <div class="front">
+                            <img src="pic/sud-min.jpg" class="img-responsive" style="box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);" alt="">
+                            <h2></h2>
+                            <h4 style="text-align: center;text-transform: capitalize;margin-bottom: 0px;">sudhanshu saurav</h4>
+                            <p style="text-align: center;">president</p>
+                       </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h4>sudhanshu saurav</h4>
+                                <span>President</span>
+                                <div class="sm">
+                                   <a href="mailto:piyushubham@gmail.com"><i class="fa fa-envelope"></i></a>
+                            
+                           <a href="https://www.facebook.com/capreyon"><i class="fa fa-facebook"></i></a>
+                            
+                           <a href="https://www.linkedin.com/in/piyush-kumar-434a8614a/"><i class="fa fa-linkedin"></i></a>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                  <div class="col-md-2 col-xs-6">
+                    <div class="card middle" style="background-color:">
+                        <div class="front">
+                            <img src="pic/far-min.jpg" class="img-responsive" style="box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);" alt="">
+                            <h2></h2>
+                            <h4 style="text-align: center;text-transform: capitalize;margin-bottom: 0px;">Farid Nawaz</h4>
+                            <p style="text-align: center;">Vice President</p>
+                       </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h4>Farid Nawaz</h4>
+                                <span>Vice President</span>
+                                <div class="sm">
+                                    <a href ="#" class="fa fa-facebook"></a>
+                                    <a href ="#" class="fa fa-envelope"></a>
+                                    <a href ="#" class="fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col-md-2 col-xs-6">
+                    <div class="card middle" style="background-color:">
+                        <div class="front">
+                            <img src="pic/shir-min.jpg" class="img-responsive" style="box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);" alt="">
+                            <h2></h2>
+                            <h4 style="text-align: center;text-transform: capitalize;margin-bottom: 0px;">Shirish</h4>
+                            <p style="text-align: center;">General Secretary </p>
+                       </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h4>Shirish</h4>
+                                <span>General Secretary</span>
+                                <div class="sm">
+                                    <a href ="#" class="fa fa-facebook"></a>
+                                    <a href ="#" class="fa fa-envelope"></a>
+                                    <a href ="#" class="fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col-md-2 col-xs-6">
+                    <div class="card middle" style="background-color:">
+                        <div class="front">
+                            <img src="pic/shan-min.jpg" class="img-responsive" style="box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);" alt="">
+                            <h2></h2>
+                            <h4 style="text-align: center;text-transform: capitalize;margin-bottom: 0px;">Shankar Ray</h4>
+                            <p style="text-align: center;">Treasurer</p>
+                       </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h4>Shankar Ray</h4>
+                                <span>Treasurer</span>
+                                <div class="sm">
+                                    <a href ="#" class="fa fa-facebook"></a>
+                                    <a href ="#" class="fa fa-envelope"></a>
+                                    <a href ="#" class="fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="col-md-2 col-xs-6">
+                    <div class="card middle" style="background-color:">
+                        <div class="front">
+                            <img src="pic/vik-min.jpg" class="img-responsive" style="box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);" alt="">
+                            <h2></h2>
+                            <h4 style="text-align: center;text-transform: capitalize;margin-bottom: 0px;">Vikas Kumar</h4>
+                            <p style="text-align: center;"> Design Head</p>
+                       </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h4>Vikas Kumar</h4>
+                                <span>Design Head</span>
+                                <div class="sm">
+                                    <a href ="#" class="fa fa-facebook"></a>
+                                    <a href ="#" class="fa fa-envelope"></a>
+                                    <a href ="#" class="fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+                 <div class="col-md-2 col-xs-6">
+                    <div class="card middle" style="background-color:">
+                        <div class="front">
+                            <img src="pic/roh-min.jpg" class="img-responsive" style="box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);" alt="">
+                            <h2></h2>
+                            <h4 style="text-align: center;text-transform: capitalize;margin-bottom: 0px;">Rohit goud</h4>
+                            <p style="text-align: center;">Tech Head</p>
+                       </div>
+                        <div class="back">
+                            <div class="back-content middle">
+                                <h4>Rohit Goud</h4>
+                                <span>Tech Head</span>
+                                <div class="sm">
+                                    <a href ="#" class="fa fa-facebook"></a>
+                                    <a href ="#" class="fa fa-envelope"></a>
+                                    <a href ="#" class="fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div> 
+             </div>
+           </div>
+       
+
+        <style >
+            
+           
+            
+            
+        </style> 
+
+       
+       </section>
 
 
-
-
-
-<section id="team" class="bg-light-gray">
-    
-    <div class="container-fluid">
-        <div class="row">           
-           <div class="col-lg-12 text-center">
-                <h2 class="section-subheading">Our Amazing Team</h2>
-
-                <h3 class="section-subheading text-muted"></h3>
+<!--<section  id="team" class="bg-light-gray">
+    <div class="container">
+     <div class="row">
+            <div class="col-lg-12 text-center">
+           
+            <h2 class="section-heading">Our Amazing Team </h2>
+            <h3 class="section-subheading text-muted"></h3>
             </div>
-   </div>
-
- <div class="row">  
-    <div class="col-lg-4">  <div class="container-fluid">
-        <div class="panel-group">
-           <div class="panel panel-inverse">
-               <div class="panel-heading">
-                    <h4 class="panel-title text-center">
-                       <a data-toggle="collapse" href="#collapse4">FOURTH YEAR<br><span class="glyphicon glyphicon-chevron-down"></span></a>
-                    </h4>
-                </div>
-                  <div id="collapse4" class="panel-collapse collapse">
-                     <div class="panel-body">
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/muddada vasavi-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Muddada Vasavi</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/Gulnaz parween-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Gulnaz Parween</h5>
-                            </div>
-                       </div>
-
-                       <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/Rehnab khan-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Rehnab Khan</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/.jpg" class="img-responsive img-circle" alt="">
-                                <h3></h3>
-                            </div>
-                       </div>
-
-                     
-                     </div>
-                  </div>
-        </div>
-     </div>
-    </div> </div>
-   
-
-     <div class="col-lg-4">  <div class="container-fluid">
-        <div class="panel-group">
-           <div class="panel panel-inverse">
-               <div class="panel-heading">
-                    <h4 class="panel-title text-center">
-                       <a data-toggle="collapse" href="#collapse3">THIRD YEAR<br><span class="glyphicon glyphicon-chevron-down"></span></a>
-                    </h4>
-                </div>
-                  <div id="collapse3" class="panel-collapse collapse">
-                     <div class="panel-body">
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/akhil boyina-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Akhil Boyina</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/amartya paul-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>AmartYA Paul</h5>
-                            </div>
-
-                       </div>
-
-                       <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/debojyoti chaki-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Debojyothi Chaki</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/Dheeraj kumar-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Dheeraj Kumar</h5>
-                            </div>
-                       </div> 
-
-
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/pratik Biswas-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Pratik Biswas</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/sasiram anupoju-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Sasiram Anipoju</h5>
-                            </div>
-                       </div>
-
-
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/Satya tejesh reddy-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Satya Tejesh</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/sbd-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Subhrodeep</h5>
-                            </div>
-                       </div>
-
-
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/shubham praliya-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Shubham Praliya</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/surya-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Surya Narayana</h5>
-                            </div>
-                       </div>
-
-                       <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/Bandaram Sumanth-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Sumanth bandaram</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/.jpg" class="img-responsive img-circle" alt="">
-                                <h5></h5>
-                            </div>
-                       </div>
-
-
-
-                     </div>
-                  </div>
-        </div>
-     </div>
-    </div> </div>
-
-
-     <div class="col-lg-4">  <div class="container-fluid">
-        <div class="panel-group">
-           <div class="panel panel-inverse">
-               <div class="panel-heading">
-                    <h4 class="panel-title text-center">
-                       <a data-toggle="collapse" href="#collapse2">SECOND YEAR<br><span class="glyphicon glyphicon-chevron-down"></span></a>
-                    </h4>
-                </div>
-                  <div id="collapse2" class="panel-collapse collapse">
-                     <div class="panel-body">
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/abhishek raj-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Abhishek Raj</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/Ankita raj-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Ankitha  Raj</h5>
-                            </div>
-
-                       </div>
-
-
-                         <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/chandra shekhar-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Chandra Shekhar</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/inganti kashyap-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Inganti Kashyap</h5>
-                            </div>
-
-                       </div>
-
-
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/kasimalla prathyusha-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Kasimalla prathyusha</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/koushik karmakar-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Koushik karmakar</h5>
-                            </div>
-
-                       </div>
-
-
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/kritika raman1-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Kritika Raman</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/manoj layek-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Manoj Layek</h5>
-                            </div>
-
-                       </div>
-
-                         <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/linga-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Linga Goud</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/mohith-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Mohith Vardhan </h5>
-                            </div>
-
-                       </div>
-
-
-                         <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/Prathiksha patel-min.jpg" class="img-responsive img-circle" alt="">
-                                <h5>Prathiksha Patel</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/lipi akansha-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Lipi Akansha </h5>
-                            </div>
-
-                       </div>  
-
-
-                      <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/rittick purkait-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Rittick Purkait</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/somyajula rittika-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Somayajula Rittika</h5>
-                            </div>
-
-
-                       </div>
-
-                        <div class="row">
-
-                            <div class="col-xs-6">
-                                <img src="pic/vinita singh-min.jpeg" class="img-responsive img-circle" alt="">
-                                <h5>Vinitha Singh</h5>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <img src="pic/yamini vithanala-min.jpeg"class="img-responsive img-circle" alt="">
-                                <h5>Yamini Vithanala</h5>
-                            </div>
-
-
-                       </div>
-
-
-
-
-
-
-
-
-
-                       
-                     </div>
-                  </div>
-        </div>
-     </div>
-    </div> </div> 
- 
+    <button class="tablink" onclick="openPage('torch', this, '#7db545')" id="defaultOpen">TOURCH</button>
+<button class="tablink" onclick="openPage('seniors', this, '#7db545')">SENIORS</button>
+<button class="tablink" onclick="openPage('juniors', this,'#7db545')">JUNIORS</button>
+
+<div id="torch" class="tabcontent">
+  <div class="container-fluid">
+    <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img" >
+   <div class="overlay">
+    <div class="text"><span class="glyphicon glyphicon-camera"></span></div>
   </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:black; padding: 0px; margin: 0px">photographer</h12>
+    </div>
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+ <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+   <div class="overlay">
+    <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
+
+  </div>
+</div>
+<h6 style="color:#555;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+
+    </div>
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+    <div class="text"><i class="fa fa-code style="font-size: 20px;"></i></div>
+  </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:#555; padding: 0px; margin: 0px">web developer</h12>
+    </div>
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+     <div class="text"><i class="fa fa-tv style="font-size: 20px;"></i></div>
+
+  </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:#555; padding: 0px; margin: 0px">graphic designer</h12>
+    </div>
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+    <div class="text">linga</div>
+
+  </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:#555; padding: 0px; margin: 0px">excutive member</h12>
+    </div>
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+    <div class="text">linga</div>
+
+  </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:#555; padding: 0px; margin: 0px">excutive member</h12>    </div>
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+    <div class="text">linga</div>
+
+  </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:black; padding: 0px; margin: 0px">excutive member</h12>
+    </div>
+    <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+    <div class="text">linga</div>
+
+  </div>
+</div>
+<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">linga goud</h6>
+<h12 style="color:black; padding: 0px; margin: 0px">excutive member</h12>
+    </div>
+
+     <div class="col-lg-2 col-xs-6" >
+     <div class="team-m">
+  <img src="pic/linga-min.jpeg" alt="Avatar" class="team-m-img">
+  <div class="overlay">
+    <div class="text">linga</div>
+
+  </div>
+</div>
+<h6 style="color: red;">linga goud</h6>
+    </div>
+   </div> 
+</div>
+
+<div id="seniors" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="juniors" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+</section>-->
+<section class="bg-light-gray"></section>
+
+
+ <section id="spon" style="padding-top: %">
+    <aside class="clients">
+        <div class="container-fluid" style="background-color: white ;padding-top:px;">
+            <div class="row">
+            <div class="col-lg-12 text-center">
+            <h2 class="section-heading ">Our proud sponsors </h2>
+            <h3 class="section-subheading text-muted"></h3>
+            </div>
+                <div class="col-md-2 col-xs-">
+                    <a href="#">
+                        <img src="pic/bar nat2.jfif" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs">
+                    <a href="#">
+                        <img src="pic/bigbazar-min.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-2 col-sm-">
+                    <a href="#">
+                        <img src="pic/canara3.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div> 
+                
+                <div class="col-md-2 col-xs-">
+                    <a href="#">
+                        <img src="pic/lemon grass-min.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-">
+                    <a href="#">
+                        <img src="pic/titan.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-">
+                    <a href="#">
+                        <img src="pic/arihant.jfif" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    </section> 
 </section>
+		
 
 
 		<!-- Contact Section -->
