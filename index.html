@@ -26,9 +26,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style1.css">
+
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,7 +50,7 @@
   text-decoration: none;
   font-size: 20px;
   color: white;
-  border-radius: ;
+  border-radius: px;
   
 }
 
@@ -56,35 +60,37 @@
 
 #facebook-side {
   bottom: 40%;
-  background-color: #4267B2;
+  background-color: #2f2f2f;
 }
 
 #instagram-side {
   bottom: 30%;
-  background-color: #dd4b39;
+  background-color: #2bc142 ;
+  color:black;
 }
 
 #gmail-side {
   bottom: 20%;
-  background-color: #00b489;
+  background-color: #2f2f2f;
 }
 
 #twitter-side {
   bottom: 10%;
-  background-color: #55ACEE;
+  background-color: #2bc142 ;
+  color: black;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   #mySidenav a{
     visibility: hidden;
   }
   }
-  @media (min-width: 375px){
+  @media (min-width: 500px){
     #mySidenav2 a{
       visibility: hidden;
     }
   }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
 #mySidenav2 a {
   position: absolute;
   left: -90px;
@@ -136,6 +142,76 @@
 
    }
 
+
+.loading-screen{
+    width: 100%;
+    height: 100vh;
+    background-color:  #F5F5F5;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+
+.loading{
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.loading span{
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    margin: 4px;
+    animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale{
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+.loading span:nth-child(1){
+    border-radius: 50% 50% 0 50%;
+    background-color:#229A34;
+    transform-origin: bottom right;
+}
+
+.loading span:nth-child(2){
+    border-radius: 50% 50% 50% 0;
+    background-color: #26AD3B;
+    transform-origin: bottom left;
+    animation-delay: .5s;
+}
+
+.loading span:nth-child(3){
+    border-radius: 50% 0 50% 50%;
+    background-color:#26AD3B ;
+    transform-origin: top right;
+    animation-delay: 1.5s;
+}
+
+.loading span:nth-child(4){
+    border-radius: 0 50% 50% 50%;
+    background-color:#a15c16;
+    width: 28px;
+    height: 28px;
+    transform-origin: top left;
+    animation-delay: 1s;
+}
+
+
+
            /*counting for large screens*/
             .counting-content{
                 position: absolute;
@@ -155,6 +231,7 @@
                 text-align: center;
                 padding:30px;
                 color:black;
+
 
             }
             .iconbox i{
@@ -215,7 +292,7 @@
             }
 
             /*counting for small screens*/
-            @media (min-width: 375px){
+            @media (min-width:500px){
                 .upcoming-text{
                     display:none;
                 }
@@ -320,6 +397,7 @@
                 position:relative;
                 animation-name:elementtwo;
                 animation-duration: 3s;
+                animation-delay: 3.5s;
                 animation-iteration-count:2;
                 animation-timing-function: ;
                 animation-direction: alternate;
@@ -331,6 +409,7 @@
                 position:relative;
                 animation-name:elementone;
                 animation-duration: 3s;
+                animation-delay: 3.5s;
                 animation-iteration-count:2;
                 animation-timing-function: ;
                 animation-direction: alternate;
@@ -610,6 +689,21 @@ background-position: right;
 </style>
 <body>
 
+   <div class="loading-screen">
+    <div class="loading">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+</div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+      </script><script>
+      setTimeout(function() {
+        $('.loading-screen').fadeToggle()
+      }, 3500);
+    </script>
   
 <!--counting for large screens-->
         <div class="counting-content">
@@ -659,7 +753,7 @@ background-position: right;
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- Brand and toggle get grouped for better conile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
@@ -1240,7 +1334,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         <ul class="list-inline social-buttons">
                             <li><a href="mailto:dheerajk1132000@gmail.com"><i class="fa fa-envelope"></i></a>
                             </li>
-                            <li><a href="mob:7003608677"><i class="fa fa-phone"></i></a>
+                            <li><a href="tel:7003608677"><i class="fa fa-phone"></i></a>
                             </li>
                             <li><a href="https://www.linkedin.com/in/dheeraj-kumar-a0545818b/"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -1256,7 +1350,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         <ul class="list-inline social-buttons">
                             <li><a href="mailto:suganaram257@gmail.com"><i class="fa fa-envelope"></i></a>
                             </li>
-                            <li><a href="mob:7231926029"><i class="fa fa-phone"></i></a>
+                            <li><a href="tel:7231926029"><i class="fa fa-phone"></i></a>
                             </li>
                             <li><a href="https://www.linkedin.com/in/sugana-ram-a8a209194"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -1274,7 +1368,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         <ul class="list-inline social-buttons">
                             <li><a href="mailto:sakchiagarwal3289@gmail.com"><i class="fa fa-envelope"></i></a>
                             </li>
-                            <li><a href="mob:7044988664"><i class="fa fa-phone"></i></a>
+                            <li><a href="tel:7044988664"><i class="fa fa-phone"></i></a>
                             </li>
                             <li><a href="https://www.linkedin.com/in/sakchi-agarwal-76516a10a/"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -1289,7 +1383,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         <ul class="list-inline social-buttons">
                             <li><a href="mailto:wrikb98@gmail.com"><i class="fa fa-envelope"></i></a>
                             </li>
-                            <li><a href="mob:+919123861841"><i class="fa fa-phone"></i></a>
+                            <li><a href="tel:+919123861841"><i class="fa fa-phone"></i></a>
                             </li>
                             <li><a href="https://www.linkedin.com/in/subhradeep-barman-55631019"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -1307,7 +1401,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         <ul class="list-inline social-buttons">
                             <li><a href="mailto:bsurya.nitdgp@gmail.com"><i class="fa fa-envelope"></i></a>
                             </li>
-                            <li><a href="mob:8328542416"><i class="fa fa-phone"></i></a>
+                            <li><a href="tel:8328542416"><i class="fa fa-phone"></i></a>
                             </li>
                             <li><a href="https://www.linkedin.com/in/surya-b-3a4021199"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -1342,7 +1436,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                         <ul class="list-inline social-buttons">
                             <li><a href="mailto:akhilboyina10@gmail.com"><i class="fa fa-envelope"></i></a>
                             </li>
-                            <li><a href="mob:8309136698"><i class="fa fa-phone"></i></a>
+                            <li><a href="tel:8309136698"><i class="fa fa-phone"></i></a>
                             </li>
                             <li><a href="https://www.linkedin.com/in/akhil-boyina-ba1309158"><i class="fa fa-linkedin"></i></a>
                             </li>
@@ -1439,7 +1533,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                                 <div class="sm">
                                    <a href="mailto:dheerajk1132000@gmail.com"><i class="fa fa-envelope"></i></a>
 
-                           <a href="mob:7003608677"><i class="fa fa-phone"></i></a>
+                           <a href="tel:7003608677"><i class="fa fa-phone"></i></a>
 
                            <a href="https://www.linkedin.com/in/dheeraj-kumar-a0545818b/"><i class="fa fa-linkedin"></i></a>
 
@@ -1464,7 +1558,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                                 <div class="sm">
                                    <a href="mailto:suganaram257@gmail.com"><i class="fa fa-envelope"></i></a>
 
-                           <a href="mob:7231926029"><i class="fa fa-phone"></i></a>
+                           <a href="tel:7231926029"><i class="fa fa-phone"></i></a>
 
                            <a href="https://www.linkedin.com/in/sugana-ram-a8a209194"><i class="fa fa-linkedin"></i></a>
 
@@ -1489,7 +1583,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                                 <div class="sm">
                                    <a href="mailto:sakchiagarwal3289@gmail.com"><i class="fa fa-envelope"></i></a>
 
-                           <a href="mob:7044988664"><i class="fa fa-phone"></i></a>
+                           <a href="tel:7044988664"><i class="fa fa-phone"></i></a>
 
                            <a href="https://www.linkedin.com/in/sakchi-agarwal-76516a10a/"><i class="fa fa-linkedin"></i></a>
 
@@ -1514,7 +1608,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                                <div class="sm">
                                    <a href="mailto:bsurya.nitdgp@gmail.com"><i class="fa fa-envelope"></i></a>
 
-                           <a href="mob:8328542416"><i class="fa fa-phone"></i></a>
+                           <a href="tel:8328542416"><i class="fa fa-phone"></i></a>
 
                            <a href="https://www.linkedin.com/in/surya-b-3a4021199"><i class="fa fa-linkedin"></i></a>
 
@@ -1539,7 +1633,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                                 <div class="sm">
                                    <a href="wrikb98@gmail.com"><i class="fa fa-envelope"></i></a>
 
-                           <a href="mob:+919123861841"><i class="fa fa-phone"></i></a>
+                           <a href="tel:+919123861841"><i class="fa fa-phone"></i></a>
 
                            <a href="https://www.linkedin.com/in/subhradeep-barman-55631019"><i class="fa fa-linkedin"></i></a>
 
@@ -1593,7 +1687,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
                                 <div class="sm">
                                    <a href="mailto:akhilboyina10@gmail.com"><i class="fa fa-envelope"></i></a>
 
-                           <a href="mob:8309136698"><i class="fa fa-phone"></i></a>
+                           <a href="tel:8309136698"><i class="fa fa-phone"></i></a>
 
                            <a href="https://www.linkedin.com/in/akhil-boyina-ba1309158"><i class="fa fa-linkedin"></i></a>
 
