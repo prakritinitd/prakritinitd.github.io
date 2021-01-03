@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,7 +35,96 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
+<style>
 
+  #mySidenav a {
+  position: fixed;
+  left: -110px;
+  transition: 0.3s;
+  padding: 8px;
+  width: 160px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: ;
+  
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#facebook-side {
+  bottom: 40%;
+  background-color: #4267B2;
+}
+
+#instagram-side {
+  bottom: 30%;
+  background-color: #dd4b39;
+}
+
+#gmail-side {
+  bottom: 20%;
+  background-color: #00b489;
+}
+
+#twitter-side {
+  bottom: 10%;
+  background-color: #55ACEE;
+}
+@media screen and (max-width: 375px) {
+  #mySidenav a{
+    visibility: hidden;
+  }
+  }
+  @media (min-width: 375px){
+    #mySidenav2 a{
+      visibility: hidden;
+    }
+  }
+
+@media screen and (max-width: 375px) {
+#mySidenav2 a {
+  position: absolute;
+  left: -90px;
+  transition: 0.4s;
+  padding: 6px;
+  width: 135px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 0px ;
+  
+}
+
+#mySidenav2 a:hover {
+  left: 0;
+}
+
+#facebook-short{
+  top: 20%;
+  background-color: #4267B2;
+}
+
+#instagram-short{
+  top: 30%;
+  background-color: #dd4b39;
+}
+
+#gmail-short {
+  top: 40%;
+  background-color: #00b489;
+}
+
+#twitter-short {
+  top: 50%;
+  background-color: #55ACEE;
+}
+}
+
+
+</style>
 </head>
 
 
@@ -168,7 +257,7 @@
             .iconbox2 i{
                 font-size :23px;
                 background-color: ;
-                border-radius: %;
+                border-radius: ;
                 color:#333333;
                 height: px;
                 width: px;
@@ -345,6 +434,8 @@
 
 
 
+
+
 /*Style tab links */
 /* Style tab links */
 .tablink {
@@ -494,7 +585,7 @@ background-position: right;
     border-radius: 3px 3px 3px 3px ;
 
 }
-}
+
 
 .team-member {
 
@@ -512,14 +603,14 @@ background-position: right;
 .team-member a li{
     display:;
 }
-
-
 }
 
+ 
 
 </style>
+<body>
 
-
+  
 <!--counting for large screens-->
         <div class="counting-content">
             <div class="counting-sec">
@@ -612,14 +703,16 @@ background-position: right;
                     <li>
                         <a class="page-scroll" href="#about">about us</a>
                     </li>
-          <li>
-                        <a class="page-scroll" href="#upcoming">upcoming</a>
-                    </li>
+          
                     <li>
                         <a class="page-scroll" href="#portfolio">events</a>
           </li>
           <li>
                         <a class="page-scroll" href="#projectmodel">Projects</a>
+                    </li>
+                              </li>
+          <li>
+                        <a class="page-scroll" href="#e_certificate">E-certificate</a>
                     </li>
 
                     <li>
@@ -694,6 +787,24 @@ background-position: right;
          <script type="text/javascript">
             $(".num2").counterUp({delay:10,time:1000});
         </script>
+
+        <div id="mySidenav2" class="sidenav">
+  <a href="#" id="facebook-short">&nbsp Facebook  &nbsp&nbsp <i class="fa fa-facebook"></i></a>
+  <a href="#" id="instagram-short"> &nbsp Instagram &nbsp&nbsp<i href="#" class="fa fa-instagram"></i></a>
+  <a href="#" id="gmail-short"> &nbsp&nbspEmail   &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i href="#" class="fa fa-google"></i></a>
+  <a href="#" id="twitter-short">&nbsp &nbspTwitter   &nbsp&nbsp &nbsp&nbsp &nbsp<i href="#" class="fa fa-twitter"></i></a>
+   </div>
+
+     <div id="mySidenav" class="sidenav">
+  <a href="#" id="facebook-side">&nbsp Facebook  &nbsp&nbsp <i class="fa fa-facebook"></i></a>
+  <a href="#" id="instagram-side"> &nbsp Instagram &nbsp&nbsp<i href="#" class="fa fa-instagram"></i></a>
+  <a href="#" id="gmail-side"> &nbsp&nbspEmail   &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i href="#" class="fa fa-google"></i></a>
+  <a href="#" id="twitter-side">&nbsp &nbspTwitter   &nbsp&nbsp &nbsp&nbsp &nbsp<i href="#" class="fa fa-twitter"></i></a>
+   </div>
+
+
+
+
     <!-- About Section -->
     <section id="about" style="padding-top: 60px">
         <div class="container"  >
@@ -702,7 +813,7 @@ background-position: right;
                     <div class="heading-animation" ><div  class="heading2-element" ></div></div>
                     <h2 class="section-heading text-animation" >About Us</h2>
                     <div class="heading-animation"><div class="heading1-element"></div></div>
-                    <p class="section-subheading text-muted" style = "align:left; padding-top:100px; font-size:120%">We the People of </p><h6 style="color:#2bc142; isolation: isolate;" >Prakriti- The Environmental Club of NIT Durgapur</h6>
+                    <p class="section-subheading text-muted" style = "align:left; padding-top:60px; font-size:120%">We the People of </p><h6 style="color:#2bc142; isolation: isolate;" >Prakriti- The Environmental Club of NIT Durgapur</h6>
                     <p class="darkmode--activated">strive to make a difference and inculcate the seed of awareness and action in the minds of prospective engineers to make this environment a sustainable place for every living being. Our motto is to change the notion that Engineers do not care for environment into making every individual on campus, a GreenEngineer, who minimizes the risk of pollution that might be caused with new inventions or breakthrough researches in technology. As a club, we imbibe to the values our Mother Nature has taught us: Perseverance, Sustenance and Progress. Right from its rootage, Team Prakriti has made true those envisions of the founders of our club and crossed many milestones ever since its onset. We conduct our events throughout the year, reminding and awaking the slumbered minds, the importance of environment and its preservation. </p>
                 </div>
             </div>
@@ -712,6 +823,7 @@ background-position: right;
             </div>
 -->
         </div>
+
     </section>
     </section>
 
@@ -1015,6 +1127,44 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
             </div>
 
     </section>
+
+    
+
+<!--  <div style="height: 150px"></div>-->
+
+  <!--E-certificate
+  <section id="e_certificate" class="bg-light-gray">
+    <div class="container" >
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-animation" style=" text-shadow:  ">E-CERTIFICATE</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row" style="border: 2px solid #32CD32;outline: 4px solid black; outline-offset:10px;">
+              
+               <div class="col-lg-12 text-center">
+              <h3>COCUNDRUM</h3>
+              <p>Caged into the bars of house and not getting any chance to conduct an offline event, we tried to capture our participants minds by bringing in an online event named "Conundrum". This was a two day event, which was divided into further many rounds based on college and environmental related picture clues. All the participants were supposed to guess the college places in the first day of the event, and on the second day we tried giving them environmental related topic picture clues. Basically, this event was conducted to juggle up the students psyche with pearls of nostalgia and diving into the depths  wisdoms by bringing their optic nerves into action. And based on thr cumulative score of both the rounds, the winners were decided. So, our club Prakriti- The official Techno environmental club of NIT Durgapur,tried to take the participants on a tour of their own voyage of ricky- ticky inklings through the very first edition of Conundrum.</p></br>
+
+
+               FOR ECOCUNDRUM CERTIFICATE</br>
+               <a href="#" >CLICK HERE</a></br></br>
+
+
+            
+            </div>
+
+            </div>
+    </div>
+      
+    </div>
+
+
+    
+  </section>
+-->
+
 
 
    <div style="height: 150px"></div>
@@ -2557,12 +2707,12 @@ document.getElementById("defaultOpen").click();
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h12><span class="copyright">Copyright &copy; Prakriti 2020</span></h12>
+                    <h12><span class="copyright">Copyright &copy; Prakriti 2021</span></h12>
           <h12><span class="copyright"><BR>IT TEAM,PRAKRITI</BR></span></h12>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="mob:6303752275"><i class="fa fa-phone"></i></a>
+                        <li><a href="tel:6303752275"><i class="fa fa-phone"></i></a>
                         </li>
                         <li><a href="https://www.facebook.com/prakriti.nitdgp/"><i class="fa fa-facebook"></i></a>
                         </li>

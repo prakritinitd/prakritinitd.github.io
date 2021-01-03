@@ -20,3 +20,4 @@
 [0421/164726.999:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files\temp: Access is denied. (0x5)
 [0421/164727.062:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [0421/164727.139:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[1022/212726.246:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
