@@ -760,18 +760,96 @@ background-position: right;
 }
 }
 
-//wave
 
-.wave{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left:0;
-  height: 100px;
-  background:url(pic/wave.png);
-  background-size: 1000px 100px;
+
+.wave h1{
+  -webkit-background-clip: text;
+  
+   -webkit-text-fill-color: transparent;
+  background-image: url(green_waves.jpg);
+  animation: water 15s infinite;
+  color:red;
+
+  
 }
 
+@keyframes water{
+  from{
+    background-position: left 0 top 0;
+  }
+  to{
+    background-position: left 1000px top 0;
+  }
+}
+
+.animation_area{
+  width: 100%;
+  
+  background-color: red;
+}
+.icons li{
+  color: white;
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 15px;
+  height: 15px;
+  background:rgb(92, 184, 92,0.2);
+  animation: animate 20s linear infinite;
+  bottom: +5px;
+  border-radius: 50%;
+  text
+}
+.icons li:nth-child(1){
+  left:86%;
+  width:40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.icons li:nth-child(2){
+  left:12%;
+  width:25px;
+  height: 25px;
+  animation-duration:3.5s;
+}
+.icons li:nth-child(3){
+  left:70%;
+  width:50px;
+  height: 50px;
+  animation-delay: 5.5s;
+
+}
+.icons li:nth-child(4){
+  left:42%;
+  width:40px;
+  height: 40px;
+  animation-delay: 0s;
+  animation-duration:15s; 
+}
+.icons li:nth-child(5){
+  left:65%;
+  width:22px;
+  height: 22px;
+  animation-delay: 0s;
+}
+ .icons li:nth-child(6){
+  left:15%;
+  width:35px;
+  height: 35px;
+  
+  animation-delay: 2.5s;
+  animation-duration: 13s;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-200px)rotate(360deg);
+    opacity: 0;
+  }
+}
  
 
 </style>
@@ -990,23 +1068,33 @@ background-position: right;
 <!--<div style="height: 50px"></div>-->
  <section id="SAFARNAMA" style="padding-top: 20px;background-color: #0000000;">
     <div class="container" style="background-image: url();" >
-            <div class="row" style="border: 2px solid #32CD32;outline: 4px solid black; outline-offset:10px; 	">
+            <div class="row" style="border: 2px solid #5cb85c ;	">
+
               
                <div class="col-lg-12 text-center">
-               
-              <h2 class="section-heading text-animation" style="margin-bottom: 0px; " >AUDITIONS</h2>
-              	<div class="heading-animation" ><div  class="heading2-element-dot" ></div></div>
-              	<div class="heading-animation" ><div  class="heading1-element-dot" ></div></div></br>
+               <div class="wave">
+              <h1 style="margin-bottom: 0px; ">AUDITIONS</h1>
+            </div>
+              
+              	</br>
                 <p>Welcome to Prakriti- The Environmental Club of NIT Durgapur</p>
                 <h5>First round will be live from 8TH MATRCH TO 11MARCH</h5>
               
                
                 <div class="text-center"  ><a href="http://bit.ly/3uYsPAt" class="btn btn-primary" style="text-align: center" role="button">START ROUND 1</a></div></br>
 
-               <div class="wave wave1"></div>
-               <div class="wave wave2"></div>
-               <div class="wave wave3"></div>
-               <div class="wave wave4"></div>
+               <div class="animation_area">
+                <ul class="icons">
+                  <li><span class="glyphicon glyphicon-leaf center"></li>
+                  <li><span class="glyphicon glyphicon-console  center"></li>
+                  <li><span class="glyphicon glyphicon-edit center"></li>
+                  <li><span class="glyphicon glyphicon-camera"></li>
+                     <li><span class="glyphicon glyphicon-console"></li>
+                   <li><span class="glyphicon glyphicon-leaf"></li>
+                 
+                </ul>
+              </div>
+              
             
             </div>
 
