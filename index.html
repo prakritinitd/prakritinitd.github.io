@@ -810,13 +810,13 @@ background-position: right;
   left:12%;
   width:25px;
   height: 25px;
-  animation-duration:3.5s;
+  animation-duration:4s;
 }
 .icons li:nth-child(3){
   left:70%;
   width:50px;
   height: 50px;
-  animation-delay: 5.5s;
+  animation-delay: 5s;
 
 }
 .icons li:nth-child(4){
@@ -851,6 +851,12 @@ background-position: right;
   }
 }
  
+
+.darkmode--activated{
+  
+  color: #5cb85c;
+
+}
 
 </style>
 <body>
@@ -960,11 +966,12 @@ background-position: right;
           <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#"></a>
-                    </li>
+                    
                     <li>
                         <a class="page-scroll" href="#about">about us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#SAFARNAMA">Auditions</a>
                     </li>
           
                     <li>
@@ -1007,7 +1014,7 @@ background-position: right;
 <!--<div id="hislider1" style=" max-width:960px;max-height:360px;height:100%; margin: 0 auto;"><noscript>The slider is powered by <strong>Hi Slider</strong>, a easy jQuery image slider from <a target="_blank" href="hislider.com">hislider.com</a>. Please enable JavaScript to view.</noscript><div class="hi-about-text" style="display:none">This jQuery slider was created with the free <a style="color:#FFF;" href="http://hislider.com" target="_blank">Hi Slider</a> for WordPress plugin,Joomla & Drupal Module from hislider.com.<br /><br /><a style="color:#FFF;" href="#" class="hi-about-ok">OK</a></div><div class="hi-slider-watermark"  style="display:none"><a href="http://hislider.com" target="_blank">hislider.com</a></div></div>-->
  <!--end Insert to your webpage where you want to display the slider-->
 
-<div class="counting-content2">
+<!--<div class="counting-content2 "style="isolation:isolate;">
             <div class="counting-sec2">
               <div class="inner-width2">
                 <a href="#portfolio"> <div class="counting-col2">
@@ -1043,7 +1050,7 @@ background-position: right;
             </a>
              </div>
           </div>
-       </div>
+       </div>-->
 
          <script type="text/javascript">
             $(".num2").counterUp({delay:10,time:1000});
@@ -1067,9 +1074,9 @@ background-position: right;
 
 <!--<div style="height: 50px"></div>-->
  <section id="SAFARNAMA" style="padding-top: 20px;background-color: #0000000;">
-    <div class="container" style="background-image: url();" >
-            <div class="row" style="border: 2px solid #5cb85c ;	">
-
+    <div class="container"  style="background-image: url();" >
+            <div class="row " style="border: 2px solid #5cb85c ;isolation: isolate">
+              
               
                <div class="col-lg-12 text-center">
                <div class="wave">
@@ -1077,10 +1084,10 @@ background-position: right;
             </div>
               
               	</br>
-                <p>Welcome to Prakriti- The Environmental Club of NIT Durgapur</p>
-                <h5>First round will be live from 8TH MATRCH TO 11MARCH</h5>
-              
-               
+                <p >Welcome to Prakriti- The Environmental Club of NIT Durgapur</p>
+                <h5 class="">First round will be live from 9TH MARCH TO 11MARCH</h5>
+                 
+                <p >Let the greenengineers be choosen</p>
                 <div class="text-center"  ><a href="http://bit.ly/3uYsPAt" class="btn btn-primary" style="text-align: center" role="button">START ROUND 1</a></div></br>
 
                <div class="animation_area">
@@ -1144,7 +1151,7 @@ Square brackets at the end of every question indicate the length of the answer l
                     <h2 class="section-heading text-animation" >About Us</h2>
                     <div class="heading-animation"><div class="heading1-element"></div></div>
                     <p class="section-subheading text-muted" style = "align:left; padding-top:60px; font-size:120%">We the People of </p><h6 style="color:#2bc142; isolation: isolate;" >Prakriti- The Environmental Club of NIT Durgapur</h6>
-                    <p class="darkmode--activated">strive to make a difference and inculcate the seed of awareness and action in the minds of prospective engineers to make this environment a sustainable place for every living being. Our motto is to change the notion that Engineers do not care for environment into making every individual on campus, a GreenEngineer, who minimizes the risk of pollution that might be caused with new inventions or breakthrough researches in technology. As a club, we imbibe to the values our Mother Nature has taught us: Perseverance, Sustenance and Progress. Right from its rootage, Team Prakriti has made true those envisions of the founders of our club and crossed many milestones ever since its onset. We conduct our events throughout the year, reminding and awaking the slumbered minds, the importance of environment and its preservation. </p>
+                    <p class="">strive to make a difference and inculcate the seed of awareness and action in the minds of prospective engineers to make this environment a sustainable place for every living being. Our motto is to change the notion that Engineers do not care for environment into making every individual on campus, a GreenEngineer, who minimizes the risk of pollution that might be caused with new inventions or breakthrough researches in technology. As a club, we imbibe to the values our Mother Nature has taught us: Perseverance, Sustenance and Progress. Right from its rootage, Team Prakriti has made true those envisions of the founders of our club and crossed many milestones ever since its onset. We conduct our events throughout the year, reminding and awaking the slumbered minds, the importance of environment and its preservation. </p>
                 </div>
             </div>
 <!--
@@ -2036,10 +2043,10 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
             <h3 class="section-subheading text-muted"></h3>
             </div>
 
-    <button class="tablink" onclick="openPage('torch', this, '#7db545')"  style="text-align: center;">ALUMINI</button>
-<button class="tablink" onclick="openPage('seniors', this, '#7db545')" > FOURTH YEARS</button>
-<button class="tablink" onclick="openPage('juniors', this,'#7db545')"id="defaultOpen"> THIRD YEARS</button>
-<button class="tablink" onclick="openPage('inductees', this,'#7db545')" >SECOND YEARS</button>
+    <button class="tablink darkmode-ignore" onclick="openPage('torch', this, '#5cb85c')"  style="text-align: center;">ALUMINI</button>
+<button class="tablink darkmode-ignore" onclick="openPage('seniors', this, '#5cb85c')" > FOURTH YEARS</button>
+<button class="tablink darkmode-ignore" onclick="openPage('juniors', this,'#5cb85c')"id="defaultOpen"> THIRD YEARS</button>
+<button class="tablink darkmode-ignore" onclick="openPage('inductees', this,'#5cb85c')" >SECOND YEARS</button>
 
 
 <div id="juniors" class="tabcontent">
@@ -2252,8 +2259,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Ankita Raj</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">Sponsorship head</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Ankita Raj</h6>
+<h12 style="color:; padding: 0px; margin: 0px">Sponsorship head</h12>
     </div>
 
      <div class="col-lg-2 col-xs-6"  style="padding-bottom: 20px;">
@@ -2264,8 +2271,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">chandra shekhar</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">Publicity Head</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">chandra shekhar</h6>
+<h12 style="color:#; padding: 0px; margin: 0px">Publicity Head</h12>
     </div>
 
      <div class="col-lg-2 col-xs-6"  style="padding-bottom: 20px;">
@@ -2276,8 +2283,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Debakshi Gupta</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">Sponsorship Head</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Debakshi Gupta</h6>
+<h12 style="color:; padding: 0px; margin: 0px">Sponsorship Head</h12>
     </div>
 
      <div class="col-lg-2 col-xs-6"  style="padding-bottom: 20px;">
@@ -2476,8 +2483,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Dheeraj Kumar</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Dheeraj Kumar</h6>
+<h12 style="color:#; padding: 0px; margin: 0px">core member</h12>
     </div>
 
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 20px;">
@@ -2488,8 +2495,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Sakchi Agarwal</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Sakchi Agarwal</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
 
      <div class="col-lg-2 col-xs-6"  style="padding-bottom: 20px;">
@@ -2500,8 +2507,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Sugnaram</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Sugnaram</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
 
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 20px;">
@@ -2512,8 +2519,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
 
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Prajat Paul</h6>
-<h12 style="color:#555; padding: 0px; margin: 0px">photographer</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Prajat Paul</h6>
+<h12 style="color:; padding: 0px; margin: 0px">photographer</h12>
     </div>
 
 
@@ -2672,8 +2679,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Kondapalli Sravani</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Kondapalli Sravani</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 30px;" >
      <div class="team-m">
@@ -2682,8 +2689,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Shahrukh imam</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Shahrukh imam</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 30px;" >
      <div class="team-m">
@@ -2692,8 +2699,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Tiasa Das</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Tiasa Das</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 30px;" >
      <div class="team-m">
@@ -2702,8 +2709,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">shamba</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">shamba</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
 
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 15px;" >
@@ -2713,8 +2720,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Aayush Agarwal</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Aayush Agarwal</h6>
+<h12 style="color; padding: 0px; margin: 0px">core member</h12>
     </div>
 
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 30px;" >
@@ -2724,8 +2731,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-edit"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">sukesh Nandan</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">tech member</h12>
+<h6 style="color;margin-bottom: 0px;padding-bottom: 0px;">sukesh Nandan</h6>
+<h12 style="color; padding: 0px; margin: 0px">tech member</h12>
     </div>
 
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 30px;" >
@@ -2735,8 +2742,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-edit"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">piyush jain</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">tech member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">piyush jain</h6>
+<h12 style="color; padding: 0px; margin: 0px">tech member</h12>
     </div>
 
     <div class="col-lg-2 col-xs-6"  style="padding-bottom: 30px;" >
@@ -2746,8 +2753,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Dhyanesh</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Dhyanesh</h6>
+<h12 style="color; padding: 0px; margin: 0px">core member</h12>
     </div>
  </div>
 </div>
@@ -2906,8 +2913,8 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
     <div class="text"><span class="glyphicon glyphicon-leaf"></span></div>
   </div>
 </div>
-<h6 style="color:black;margin-bottom: 0px;padding-bottom: 0px;">Avishek Mahato</h6>
-<h12 style="color:black; padding: 0px; margin: 0px">core member</h12>
+<h6 style="color:;margin-bottom: 0px;padding-bottom: 0px;">Avishek Mahato</h6>
+<h12 style="color:; padding: 0px; margin: 0px">core member</h12>
     </div>
 
   </div>
