@@ -1,0 +1,84 @@
+#mySidenav a {
+  position: fixed;
+  left: -110px;
+  transition: 0.3s;
+  padding: 8px;
+  width: 160px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: px;
+}
+#mySidenav a:hover {
+  left: 0;
+}
+
+#facebook-side {
+  bottom: 40%;
+  background-color: #2f2f2f;
+}
+
+#instagram-side {
+  bottom: 30%;
+  background-color: #2bc142;
+  color: black;
+}
+
+#gmail-side {
+  bottom: 20%;
+  background-color: #2f2f2f;
+}
+
+#twitter-side {
+  bottom: 10%;
+  background-color: #2bc142;
+  color: black;
+}
+@media screen and (max-width: 500px) {
+  #mySidenav a {
+    visibility: hidden;
+  }
+}
+@media (min-width: 500px) {
+  #mySidenav2 a {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mySidenav2 a {
+    position: absolute;
+    left: -90px;
+    transition: 0.4s;
+    padding: 6px;
+    width: 135px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 0px;
+  }
+
+  #mySidenav2 a:hover {
+    left: 0;
+  }
+
+  #facebook-short {
+    top: 70px;
+    background-color: #4267b2;
+  }
+
+  #instagram-short {
+    top: 110px;
+    background-color: #dd4b39;
+  }
+
+  #gmail-short {
+    top: 150px;
+    background-color: #00b489;
+  }
+
+  #twitter-short {
+    top: 190px;
+    background-color: #55acee;
+  }
+}

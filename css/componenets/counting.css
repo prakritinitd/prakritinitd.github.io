@@ -1,0 +1,228 @@
+/*counting for large screens*/
+.counting-content {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 1;
+  visibility: visible;
+  text-decoration: none;
+}
+.inner-width {
+  max-width: 1000px;
+  display: flex;
+  /* padding; */
+}
+.counting-col {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  color: black;
+}
+.iconbox i {
+  font-size: 30px;
+  /* background-color: ;
+    border-radius: %;
+    color:black;
+    height: px;
+    width: px; */
+  padding-bottom: 10px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.num {
+  font-size: 40px;
+  margin: px 0;
+  color: black;
+  border: px solid white;
+  /* background-color: ;
+    border-radius: %; */
+  height: 60px;
+  width: 60px;
+}
+.iconbox {
+  height: ;
+  border: #25d366;
+  border-radius: 50%;
+}
+/* .count-text{
+    color: ;
+} */
+.for-border {
+  border: px solid black;
+  background-color: rgba(225, 225, 255, 0.7);
+  border-radius: px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1000px) {
+  .counting-col {
+    display: none;
+  }
+  .upcoming-events {
+    padding: px;
+    margin: px;
+  }
+}
+
+/*counting for small screens*/
+@media (min-width: 375px) {
+  .upcoming-text {
+    display: none;
+  }
+  .card-up {
+    cursor: pointer;
+    width: 100px;
+  }
+  .counting-content2 {
+    display: none;
+  }
+}
+
+.counting-content2 {
+  /* position: ;
+    bottom: ;
+    left:;
+    z-index: ; */
+  text-decoration: none;
+  padding-top: 15%;
+  padding-left: 6%;
+}
+.inner-width2 {
+  max-width: 100px;
+  display: flex;
+  /* padding; */
+}
+.counting-col2 {
+  flex: 1;
+  text-align: center;
+  padding: 7px;
+  color: black;
+  text-decoration: none;
+}
+
+.iconbox2 i {
+  font-size: 23px;
+  /* background-color: ;
+  border-radius: ; */
+  color: #333333;
+  height: px;
+  width: px;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.num2 {
+  font-size: 20px;
+  margin: px 0;
+  color: white;
+  border: px solid white;
+  /* background-color: ;
+  border-radius: %; */
+  height: 0px;
+  width: 0px;
+}
+.iconbox2 {
+  height: ;
+  border: #25d366;
+  border-radius: 50%;
+}
+.count-text2 {
+  color: white;
+  text-decoration: none;
+}
+.for-border2 {
+  border: px solid black;
+  background-color: #333333;
+  width: 76px;
+  height: 76px;
+  box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+.counting-content2 a:hover,
+.counting-content2 span:hover,
+.counting-content2 i:hover {
+  text-decoration: none;
+  color: #25d375;
+}
+
+/*headig slides*/
+.heading-animation {
+  width: 225px;
+  height: 5px;
+  /* background-color: ; */
+  margin: auto;
+}
+.heading2-element {
+  width: 60px;
+  height: 5px;
+  background-color: #00e604;
+  float: right;
+  position: relative;
+  animation-name: elementtwo;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 2;
+  /* animation-timing-function: ; */
+  animation-direction: alternate;
+}
+
+.heading1-element {
+  width: 60px;
+  height: 5px;
+  background-color: #00e604;
+  position: relative;
+  animation-name: elementone;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 2;
+  /* animation-timing-function: ; */
+  animation-direction: alternate;
+}
+.heading1-element-dot {
+  width: 5px;
+
+  height: 5px;
+  border-radius: 50%;
+  background-color: #00e604;
+  position: relative;
+  animation-name: elementone;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 2;
+  /* animation-timing-function: ; */
+  animation-direction: alternate;
+}
+.heading2-element-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #00e604;
+  float: right;
+  position: relative;
+  animation-name: elementtwo;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 2;
+  /* animation-timing-function: ; */
+  animation-direction: alternate;
+}
+
+@keyframes elementone {
+  from {
+    left: 0px;
+    opacity: 0;
+  }
+  to {
+    left: 165px;
+    opacity: 1;
+  }
+}
+@keyframes elementtwo {
+  from {
+    right: 0px;
+    opacity: 0;
+  }
+  to {
+    right: 165px;
+    opacity: 1;
+  }
+}
