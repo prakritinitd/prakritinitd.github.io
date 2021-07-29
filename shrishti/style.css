@@ -1,17 +1,5 @@
 img {
-    pointer-events: none;
-}
-.shrishtiRow {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: #fff;
-   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-   font-size: 14px;
-   color: #000;
-   background-color: #eee;
-   margin: 0;
-   padding: 0;
+    pointer-events: none; /* When the user swipes the images then he wouldnt be prompted to save the image because of this line*/
 }
 
 .swiper-container {
