@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="theme-color" content="#2bc142">  <!-- The color of url box of browser when the device is not a PC/Laptop to change the color just change the code written in its content box  -->
     <link rel="icon" href="pic/logo.jpg" type="image" sizes="16x16">
     <title>PRAKRITI</title>
 
@@ -33,6 +34,11 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Shrishti CSS -->
+    <link rel="stylesheet" href="./shrishti/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" />
 
 <style>
     .darkmode-toggle{
@@ -880,7 +886,7 @@ background-position: right;
       </script><script>
       setTimeout(function() {
         $('.loading-screen').fadeToggle()
-      }, 3500);
+      }, 100);
     </script>
   
 <!--counting for large screens-->
@@ -1467,8 +1473,7 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
             </div>
 
     </section>
-
-    
+<!--  Projects -->
 
 <!--  <div style="height: 150px"></div>-->
 
@@ -1505,10 +1510,84 @@ Prakriti-The official environmental club of NIT Durgapur brings to you the Roll 
   </section>
 -->
 
+<div style="height: 150px"></div>
 
 
-   <div style="height: 150px"></div>
+<!-- Shrishti -->
+<section id="shrishti" class="bg-light-gray">
+    <div class="containerShrishti">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">SHRISHTI</h2>
+            <h3 class="section-subheading text-muted"></h3>
+        </div>
+    </div>
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+    <div class="shrishtiRow">
+        <!-- Slider main container -->
+    <div class="
+    swiper-container
+    swiper-container-coverflow
+    swiper-container-3d
+    swiper-container-horizontal
+  " style="cursor: grab">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper" style="
+      transition-duration: 0ms;
+      transform: translate3d(574px, 0px, 0px);
+      perspective-origin: 160px 50%;
+    ">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-active" style="
+        transition-duration: 0ms;
+        transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+        z-index: 1;
+      ">
+            <div class="picture">
+                <img src="./shrishti/images/1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms"></div>
+        </div>
+        <div class="swiper-slide swiper-slide-next" style="
+        transition-duration: 0ms;
+        transform: translate3d(0px, 0px, -350px) rotateX(0deg)
+          rotateY(-20deg);
+        z-index: 0;
+      ">
+            <div class="picture">
+                <img src="./shrishti/images/2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms"></div>
+        </div>
+        <div class="swiper-slide" style="
+        transition-duration: 0ms;
+        transform: translate3d(0px, 0px, -700px) rotateX(0deg)
+          rotateY(-40deg);
+        z-index: -1;
+      ">
+            <div class="picture">
+                <img src="./shrishti/images/3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 2; transition-duration: 0ms"></div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+</section>
+<!-- Shrishti -->
 
+<div style="height: 150px"></div>
 
 
    <section id="team" class="bg-light-gray">
@@ -3749,6 +3828,32 @@ geometry of its design. </p>
     <!-- Theme JavaScript -->
     <script src="js/agency.js"></script>
 
+    <!-- Shrishti JavaScript -->
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script id="rendered-js">
+    var swiper = new Swiper(".swiper-container", {
+        autoplay: {delay: 2000,
+        disableOnInteraction: false,
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 350,
+            modifier: 1,
+            slideShadows: true,
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    </script>
+    <!-- Shrishti JavaScript -->
 </body>
 
 </html>
