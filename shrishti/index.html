@@ -27,6 +27,10 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Shrishti CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" />
   </head>
   <body id="page-top">
     
@@ -104,9 +108,9 @@
              Missed any important updates Or have any trouble looking for environmental  announcements. 
 Don't worry, we have got you covered. 
 SHRISHTI, the official journal of PRAKRITI - The Techno Environmental Club of NIT Durgapur premiered first in OCTOBER 2020 with its only objective of providing information about environmental issues and to share ideas and resources so that readers can live more sustainable lives and be aware of the ongoing efforts for change.
-Enhancing our efforts for Mother Earth, releasing our <strong>new site </strong>  of SHRISHTI, where with just one click you can surf all the previous and new headlines online. 
 
-            </p>
+Enhancing our efforts for Mother Earth, releasing our <strong>new site </strong>  of SHRISHTI, where with just one click you can surf all the previous and new headlines online. 
+           </p>
           </div>
         </div>
       </div>
@@ -116,16 +120,68 @@ Enhancing our efforts for Mother Earth, releasing our <strong>new site </strong>
       <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <h1 class="text-center mb-5">Updates For This Month</h1>
-        <!-- Project One Row-->
-        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center project-cards">
-          <div class="col-lg-6 p-2">
-            <img class="img-fluid img-projects" src="imgs/1.jpg" alt="..." />
-          </div>
-          <div class="col-lg-6 p-2">
-            <img class="img-fluid img-projects" src="imgs/2.jpg" alt="..." />
-          </div>
+      <div class="container">
+      <div class="row">
+
+<!-- Shrishti -->
+<!-- Slider main container -->
+    <div class="
+    swiper-container
+    swiper-container-coverflow
+    swiper-container-3d
+    swiper-container-horizontal
+  " style="cursor: grab">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper" style="
+      transition-duration: 0ms;
+      transform: translate3d(574px, 0px, 0px);
+      perspective-origin: 160px 50%;
+    ">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-active" style="
+        transition-duration: 0ms;
+        transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+        z-index: 1;
+      ">
+            <div class="picture">
+                <img src="./images/latest.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms"></div>
         </div>
-      </div>
+        <div class="swiper-slide swiper-slide-next" style="
+        transition-duration: 0ms;
+        transform: translate3d(0px, 0px, -350px) rotateX(0deg)
+          rotateY(-20deg);
+        z-index: 0;
+      ">
+            <div class="picture">
+                <img src="./images/6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms"></div>
+        </div>
+        <div class="swiper-slide" style="
+        transition-duration: 0ms;
+        transform: translate3d(0px, 0px, -700px) rotateX(0deg)
+          rotateY(-40deg);
+        z-index: -1;
+      ">
+            <div class="picture">
+                <img src="./images/4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
+            <div class="swiper-slide-shadow-right" style="opacity: 2; transition-duration: 0ms"></div>
+        </div>
+        
+    </div>
+</div>
+    </div>
+</div>
+</div>
+</section>
+<!-- Shrishti -->
+
     </section>
     
     <div class="container-1 mb-5">
@@ -432,4 +488,30 @@ Enhancing our efforts for Mother Earth, releasing our <strong>new site </strong>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
+   <!-- Shrishti JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+   <script id="rendered-js">
+        var swiper = new Swiper(".swiper-container", {
+            autoplay: {delay: 3500,
+            disableOnInteraction: true,
+            },
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 350,
+                modifier: 1,
+                slideShadows: true,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+        <!-- Shrishti JavaScript -->
+
 </html>

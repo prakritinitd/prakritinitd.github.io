@@ -1,5 +1,6 @@
-img {
+.picture img {
     pointer-events: none; /* When the user swipes the images then he wouldnt be prompted to save the image because of this line*/
+    user-select: none;
 }
 
 .swiper-container {
