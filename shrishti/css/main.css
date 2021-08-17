@@ -159,18 +159,17 @@ body {
     font-size: 50px;
   }
 }
-@media(max-width:600px){
-
-  .modal img{
+@media (max-width: 600px) {
+  .modal img {
     height: auto;
     max-width: unset;
     margin: 0;
   }
-  .mySlides{
+  .mySlides {
     padding: 0;
   }
 }
-.modal::-webkit-scrollbar{
+.modal::-webkit-scrollbar {
   display: none;
 }
 
@@ -247,4 +246,21 @@ footer {
   background: black;
   color: white;
   padding: 2rem;
+}
+.shristi_video {
+  min-height: 100vh;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: 500px;
+}
+
+@media (max-width: 800px) {
+  iframe {
+    width: 300px;
+    height: 250px;
+  }
 }
