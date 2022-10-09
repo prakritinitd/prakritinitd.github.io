@@ -204,7 +204,7 @@ const members2022=[
     },
   ]
 
-  const member2023=[
+  const members2023=[
       {
         name: "UTSAV PANDEY",
         post: "Creative Head",
