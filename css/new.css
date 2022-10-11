@@ -1,0 +1,72 @@
+.rj-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 30px;
+    color: black;
+}
+.rj-head {
+    font-size: 4rem;
+    padding: 16px 0;
+    color: #5cb85c !important;
+}
+.rj-cards .rj-card {
+    width:  210px;
+    height: 210px;
+    position: relative !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rj-cards .rj-card-sm {
+    width:  200px;
+    height: 200px;
+}
+
+.rj-cards .rj-card:hover .rj-card-details {
+    transform: none;
+}
+
+.rj-cards .rj-card:hover img {
+    filter: blur(1px) !important;
+    transform: scale(1.2) !important;
+}
+
+.rj-cards .rj-card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: all 0.3s !important;
+}
+
+.rj-cards .rj-card .rj-card-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #5cb85c;
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.3s;
+}
+.rj-cards .rj-card .rj-card-details h3{
+    font-size: 16px;
+    padding: 6px 0;
+    margin: 0;
+}
+.rj-cards .rj-card .rj-card-details p{
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-weight: 600;
+}
