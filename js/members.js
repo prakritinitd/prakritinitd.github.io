@@ -349,9 +349,9 @@ const members2024List = [
         post: "Core Member"
     },
     {
-        name: "SAWRNALI SAHA",
+        name: "SWARNALI SAHA",
         img: "./pic/swarnali.png",
-        post: "Publicty Head"
+        post: "Publicity Head"
     }
 ]
 
@@ -487,9 +487,9 @@ const postBearersList = [
         post: "R&D Head"
     },
     {
-        name: "SAWRNALI SAHA",
+        name: "SWARNALI SAHA",
         img: "./pic/swarnali.png",
-        post: "Publicty Head"
+        post: "Publicity Head"
     },
     {
         name: "RISHITA SHAW",
@@ -502,6 +502,11 @@ const postBearersList = [
         post: "Co WebD Head"
     },
     {
+        name: "HIMANSHU TIWARI",
+        img: "./pic/himanshu.jpg",
+        post: "Co-Design Head"
+    },
+    {
         name: "BIHAN SAHA",
         img: "./pic/bihan.jpg",
         post: "Co Sponsorship Head"
@@ -509,6 +514,6 @@ const postBearersList = [
     {
         name: "AKASH RAJ",
         img: "./pic/akash.jpg",
-        post: "Co-Treasurer"
+        post: "Co Treasurer"
     },
 ]
