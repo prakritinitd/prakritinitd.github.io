@@ -335,7 +335,7 @@ const members2024List = [
     },
     {
         name: "SAHIL GUPTA",
-        img: "./pic/sahil.jpeg",
+        img: "./pic/sahil.jpg",
         post: "Tech Member"
     },
     {
