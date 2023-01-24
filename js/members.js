@@ -209,7 +209,7 @@ const members2023List = [
     {
         name: "NIHARIKA YELLANKI",
         post: "President",
-        img: imgF + "niharika.jpeg",
+        img: imgF + "niharika.jpg",
     },
 
     {
@@ -225,7 +225,7 @@ const members2023List = [
     {
         name: "M.PREETHI",
         post: "Convenor & Editor-in-Chief",
-        img: imgF + "preethi.jpeg",
+        img: imgF + "preethi.jpg",
     },
     {
         name: "GAURAV KUMAR",
@@ -335,7 +335,7 @@ const members2024List = [
     },
     {
         name: "SAHIL GUPTA",
-        img: "./pic/sahil.jpeg",
+        img: "./pic/sahil.jpg",
         post: "Tech Member"
     },
     {
