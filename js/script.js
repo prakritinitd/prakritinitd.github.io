@@ -2,8 +2,8 @@ const postBearers = document.getElementById('postBearers');
 const alumni2021 = document.getElementById('alumni2021');
 const alumni2022 = document.getElementById('alumni2022');
 const members2023 = document.getElementById('members2023')
-const members2024 = document.getElementById('members2024')
 const members2025 = document.getElementById('members2025')
+const members2026 = document.getElementById('members2026')
 
 const sortByName = (array) => {
     return array.slice(0).sort(function (a, b) {
@@ -60,7 +60,7 @@ sortByName(members2023List).map((data, index) => {
     `
 });
 
-sortByName(members2024List).map((data, index) => {
+sortByName(members2025List).map((data, index) => {
     members2024.innerHTML += `
     <div class="rj-card rj-card-sm">
         <img src="${data.img}">
@@ -72,7 +72,7 @@ sortByName(members2024List).map((data, index) => {
 `
 });
 
-sortByName(members2025List).map((data, index) => {
+sortByName(members2026List).map((data, index) => {
     members2025.innerHTML += `
     <div class="rj-card rj-card-sm">
         <img src="${data.img}">
