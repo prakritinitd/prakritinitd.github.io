@@ -576,6 +576,11 @@ const postBearersList = [
         post: "Treasurer"
     },
     {
+        name: "ACHARI TSVL",
+        img: "./pic/Achari.jpg",
+        post: "Jr. Event Coordinator"
+    },
+    {
         name: "HRIYA PRASAD",
         img: "./pic/Hriya.jpg",
         post: "Co Sponsorship Head"
