@@ -453,6 +453,7 @@ const members2026List = [
         img: "./img/2026/Ashirvadh.jpg",
         post: "Tech Member"
     },
+    
     {
         name: "BABUL RAJU",
         img: "./img/2026/Babul.jpg",
