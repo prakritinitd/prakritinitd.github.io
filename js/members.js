@@ -348,12 +348,12 @@ const members2025List = [
     {
         name: "ACHARI TSVL ",
         img: "./img/2025/Achari.jpg",
-        post: "Jr. Event Coordinator"
+        post: "Core Member"
     },
     {
         name: "AKASH SINGH",
         img: "./img/2025/Akash.jpg",
-        post: "Treasurer"
+        post: "Tech Member"
     },
     {
         name: "AMBAR",
@@ -363,11 +363,22 @@ const members2025List = [
     {
         name: "ANISH KUMAR RAY",
         img: "./img/2025/Anish.jpg",
-        post: "R & D Head"
+        post: "Core Member"
     },
+    {
+        name: "ANTARA SHAW",
+        img: "./img/2025/Antara.jpg",
+        post: "Tech Member"
+    },
+
     {
         name: "ASHISH PRAJAPAT",
         img: "./img/2025/Ashish.jpeg",
+        post: "Tech Member"
+    },
+    {
+        name: "BIRESHWAR HANSDA",
+        img: "./img/2025/Bireshwar.jpeg",
         post: "Tech Member"
     },
     {
@@ -383,7 +394,7 @@ const members2025List = [
     {
         name: "HRIYA PRASAD",
         img: "./img/2025/Hriya.jpg",
-        post: "Co-Sponsorship Head"
+        post: "Core Member"
     },
     {
         name: "KINNERA HARSHITHA SANJIVINI",
@@ -393,11 +404,16 @@ const members2025List = [
     {
         name: "MENKA AGRAWAL",
         img: "./img/2025/Menka.jpg",
-        post: "Co-WebD Head"
+        post: "Tech Member"
     },
     {
         name: "MOHAMMAD HAMMAD ANSARI",
         img: "./img/2025/Mohammad.jpg",
+        post: "Tech Member"
+    },
+    {
+        name: "NIKHIL SINGH",
+        img: "./img/2025/Nikhil.jpg",
         post: "Tech Member"
     },
     {
@@ -411,6 +427,16 @@ const members2025List = [
         post: "Tech Member"
     },
     {
+        name: "RUPANI KUMARI",
+        img: "./img/2025/RUPANI.jpg",
+        post: "Core Member"
+    },
+    {
+        name: "SHUBHAJYOTI ROY",
+        img: "./img/2025/Shubhajyoti.jpg",
+        post: "Tech Member"
+    },
+    {
         name: "SASISEKHAR GOPIDESI",
         img: "./img/2025/sasisekhar.jpg",
         post: "Tech Member"
@@ -418,17 +444,37 @@ const members2025List = [
     {
         name: "SATYAJIT PAUL",
         img: "./img/2025/satyajit.jpg",
-        post: "Co-Design Head"
+        post: "Tech Member"
     },
     {
         name: "SATYAVARAPU NAMITHA",
         img: "./img/2025/Satyavarapu.jpg",
-        post: "Publicity Head"
+        post: "Core Member"
+    },
+    {
+        name: "SHIBANGSHU PAL",
+        img: "./img/2025/Shibangshu.jpg",
+        post: "Core Member"
     },
     {
         name: "YOGESH KUMAR",
         img: "./img/2025/yogesh.jpg",
         post: "Tech Member"
+    },
+    {
+        name: "Kalyani Singh",
+        img: "./img/2025/Kalyani.jpg",
+        post: "Tech Member"
+    },
+    {
+        name: "SHAMBU KUMAR",
+        img: "./img/2025/Shambhu.jpg",
+        post: "Tech Member"
+    },
+    {
+        name: "Abhishek Arya",
+        img: "./img/2025/Abhishek.jpg",
+        post: "Core Member"
     }
 ]
 
