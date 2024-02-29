@@ -340,11 +340,11 @@ const members2024List = [
 ]
 
 const members2025List = [
-    {
-        name: "ABHEERUP SARKER",
-        img: "./img/2025/Abheerup.jpg",
-        post: "Core Member"
-    },
+    // {
+    //     name: "ABHEERUP SARKER",
+    //     img: "./img/2025/Abheerup.jpg",
+    //     post: "Core Member"
+    // },
     {
         name: "ACHARI TSVL ",
         img: "./img/2025/Achari.jpg",
@@ -352,7 +352,7 @@ const members2025List = [
     },
     {
         name: "AKASH SINGH",
-        img: "./img/2025/Akash.jpg",
+        img: "./img/2025/Akash2.jpg",
         post: "Tech Member"
     },
     {
@@ -362,25 +362,25 @@ const members2025List = [
     },
     {
         name: "ANISH KUMAR RAY",
-        img: "./img/2025/Anish.jpg",
+        img: "./img/2025/Anish2.jpg",
         post: "Core Member"
     },
-    {
-        name: "ANTARA SHAW",
-        img: "./img/2025/Antara.jpg",
-        post: "Tech Member"
-    },
+    // {
+    //     name: "ANTARA SHAW",
+    //     img: "./img/2025/Antara.jpg",
+    //     post: "Tech Member"
+    // },
 
     {
         name: "ASHISH PRAJAPAT",
         img: "./img/2025/Ashish.jpeg",
         post: "Tech Member"
     },
-    {
-        name: "BIRESHWAR HANSDA",
-        img: "./img/2025/Bireshwar.jpeg",
-        post: "Tech Member"
-    },
+    // {
+    //     name: "BIRESHWAR HANSDA",
+    //     img: "./img/2025/Bireshwar.jpeg",
+    //     post: "Tech Member"
+    // },
     {
         name: "GUNA",
         img: "./img/2025/Pithani.jpg",
@@ -408,14 +408,14 @@ const members2025List = [
     },
     {
         name: "MOHAMMAD HAMMAD ANSARI",
-        img: "./img/2025/Mohammad.jpg",
+        img: "./img/2025/Mohammad2.jpg",
         post: "Tech Member"
     },
-    {
-        name: "NIKHIL SINGH",
-        img: "./img/2025/Nikhil.jpg",
-        post: "Tech Member"
-    },
+    // {
+    //     name: "NIKHIL SINGH",
+    //     img: "./img/2025/Nikhil.jpg",
+    //     post: "Tech Member"
+    // },
     {
         name: "RISHI MARODIA",
         img: "./img/2025/Rishi.jpg",
@@ -426,16 +426,16 @@ const members2025List = [
         img: "./img/2025/Ronak.jpeg",
         post: "Tech Member"
     },
-    {
-        name: "RUPANI KUMARI",
-        img: "./img/2025/RUPANI.jpg",
-        post: "Core Member"
-    },
-    {
-        name: "SHUBHAJYOTI ROY",
-        img: "./img/2025/Shubhajyoti.jpg",
-        post: "Tech Member"
-    },
+    // {
+    //     name: "RUPANI KUMARI",
+    //     img: "./img/2025/RUPANI.jpg",
+    //     post: "Core Member"
+    // },
+    // {
+    //     name: "SHUBHAJYOTI ROY",
+    //     img: "./img/2025/Shubhajyoti.jpg",
+    //     post: "Tech Member"
+    // },
     {
         name: "SASISEKHAR GOPIDESI",
         img: "./img/2025/sasisekhar.jpg",
@@ -451,11 +451,11 @@ const members2025List = [
         img: "./img/2025/Satyavarapu.jpg",
         post: "Core Member"
     },
-    {
-        name: "SHIBANGSHU PAL",
-        img: "./img/2025/Shibangshu.jpg",
-        post: "Core Member"
-    },
+    // {
+    //     name: "SHIBANGSHU PAL",
+    //     img: "./img/2025/Shibangshu.jpg",
+    //     post: "Core Member"
+    // },
     {
         name: "YOGESH KUMAR",
         img: "./img/2025/yogesh.jpg",
